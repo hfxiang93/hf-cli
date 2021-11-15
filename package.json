@@ -1,0 +1,28 @@
+{
+  "name": "hf-code-cli",
+  "version": "1.0.0",
+  "description": "a vue cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hf": "bin/hf",
+    "hf-add": "bin/hf-add",
+    "hf-delete": "bin/hf-delete",
+    "hf-list": "bin/hf-list",
+    "hf-init": "bin/hf-init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table": "^0.3.6",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.2.2",
+    "log-symbols": "^4.0.0",
+    "ora": "^3.2.0"
+  }
+}
