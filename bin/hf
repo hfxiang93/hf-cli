@@ -1,36 +1,37 @@
 #!/usr/bin/env node
 const program = require('commander')
 
+// 用法示例
 program.usage('<command>')
-
+// cli版本
 program.version(require('../package').version)
-
+// 添加模板命令
 program
   .command('add')
   .description('add a new template')
   .action(() => {
     require('../commands/add')
   })
-
+// 删除模板命令
 program
   .command('delete')
   .description('delete a template')
   .action(() => {
     require('../commands/delete')
   })
-
+// 展示模板列表命令
 program
   .command('list')
   .description('List the templateList')
   .action(() => {
     require('../commands/list')
   })
-
+// 根据所选模板初始化项目命令
 program
   .command('init')
   .description('init a project')
   .action(() => {
     require('../commands/init')
   })
-
+// 解析参数
 program.parse(process.argv)

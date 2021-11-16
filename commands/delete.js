@@ -27,12 +27,15 @@ let question = [
 inquirer
   .prompt(question).then(answers => {
     let { name } = answers;
+    // 删除模板中对应项
     delete templateList[name]
+  // 将新的再重新写入文件
     fs.writeFile(`${__dirname}/../template.json`, JSON.stringify(templateList), 'utf-8', err => {
       if (err) console.log(chalk.red(symbols.error), chalk.red(err))
       console.log('\n')
       console.log(chalk.green(symbols.success), chalk.green('Deleted successfully!\n'))
       console.log(chalk.green('The latest templateList is: \n'))
+      // 展示最新的列表
       showTable(templateList)
     })
   })

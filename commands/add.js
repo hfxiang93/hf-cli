@@ -1,13 +1,17 @@
 #!/usr/bin/env node
-
+// 交互式命令行，并且保存用户操作记录
 const inquirer = require('inquirer')
+// 文件操作
 const fs = require('fs')
+// 获取所有的模板列表
 const templateList = require(`${__dirname}/../template`)
 const { showTable } = require(`${__dirname}/../util/showTable`)
 const symbols = require('log-symbols')
+// 打印出彩色的日志
 const chalk = require('chalk')
+// 日志级别
 chalk.level = 1
-
+// 命令行交互的内容
 let question = [
   {
     name: "name",
@@ -37,7 +41,9 @@ let question = [
 inquirer
   .prompt(question).then(answers => {
     let { name, url } = answers;
+    // 将用户输入的模板名和url添加到模板中
     templateList[name] = url.replace(/[\u0000-\u0019]/g, '') // 过滤 unicode 字符
+  // 将新的模板列表写入模板文件中
     fs.writeFile(`${__dirname}/../template.json`, JSON.stringify(templateList), 'utf-8', err => {
       if (err) console.log(chalk.red(symbols.error), chalk.red(err))
       console.log('\n')

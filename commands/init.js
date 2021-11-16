@@ -17,16 +17,18 @@ if (program.args.length < 1) return program.help()
 // 第一个参数是 webpack，第二个参数是 project-name
 let templateName = program.args[0]
 let projectName = program.args[1]
-
+// 模板名不能为空
 if (!templateList[templateName]) {
   console.log(chalk.red('\n Template does not exit! \n '))
   return
 }
+// 项目名不能为空
 if (!projectName) {
   console.log(chalk.red('\n Project should not be empty! \n '))
   return
 }
 
+// 获取模板名对应的url
 let url = templateList[templateName]
 console.log(url)
 // 开始记录用时
@@ -35,7 +37,7 @@ console.log(chalk.green('\n Start generating... \n'))
 // 出现加载图标
 const spinner = ora("Downloading...");
 spinner.start();
-
+// 根据url远程下载对应的代码
 download(
   `direct:${url}`,
   `./${projectName}`,

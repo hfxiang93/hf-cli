@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3c7609-17e4-41ce-a8df-619ea7e4f61f" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cm" beforeDir="false" afterPath="$PROJECT_DIR$/bin/hf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/hf" beforeDir="false" afterPath="$PROJECT_DIR$/bin/hf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/showTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/showTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,8 @@
       <option name="presentableId" value="Default" />
       <updated>1636972556108</updated>
       <workItem from="1636972557214" duration="121000" />
-      <workItem from="1636972702618" duration="2340000" />
+      <workItem from="1636972702618" duration="3048000" />
+      <workItem from="1637025517044" duration="705000" />
     </task>
     <servers />
   </component>
@@ -49,6 +49,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="649" y="19" key="CommitChangelistDialog2" timestamp="1637025505092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="649" y="19" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1637025505092" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1637025503822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637025503822" />
     <state x="699" y="207" width="522" height="626" key="find.popup" timestamp="1636972595338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

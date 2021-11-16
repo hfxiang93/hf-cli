@@ -6,7 +6,7 @@ const table = new Table({
     head: ['green']
   }
 })
-
+// 以列表的形式展示对应的key-value
 function showTable (tempList) {
   const list = Object.keys(tempList)
   if (list.length > 0) {
